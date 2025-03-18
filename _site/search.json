@@ -1,0 +1,23 @@
+[
+  {
+    "objectID": "charts/practice01/practice01.html",
+    "href": "charts/practice01/practice01.html",
+    "title": "Chart exploring Ukraininan median salaries",
+    "section": "",
+    "text": "Preparing data\n\ndf &lt;- df |&gt; mutate(\n  salary=parse_number(data),\n  year=parse_integer(str_sub(period, 1, 4)),\n  month=parse_integer(str_sub(period, 6, 7)),\n  date=ymd(str_glue(\"{year}-{month}-01\"))\n)\n\nLooks like salaries are rising, but keep in mind - these are absolute numbers in UAH.\n\ndf |&gt; ggplot(aes(x=date, y=salary)) +\n  geom_line() + \n  geom_smooth(method = \"loess\", formula = y~x) +\n  labs(title=\"Salary by month\", x=\"Date\", y=\"Salary (UAH)\")"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "30daychartchallenge 2025",
+    "section": "",
+    "text": "This is a Quarto website.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites.\n\n1 + 2\n\n[1] 3\n\n\n\n2025 Charts\n00 - practice"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "About this site\n\n1 + 1\n\n[1] 2"
+  }
+]

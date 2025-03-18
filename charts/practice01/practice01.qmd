@@ -1,0 +1,46 @@
+---
+title: "Chart exploring Ukraininan median salaries"
+format: html
+---
+
+
+```{r}
+#| include: false
+
+library(tidyverse)
+
+```
+```{r}
+#| include: false
+df <- read_delim("zp.csv")
+```
+
+
+Preparing data
+
+```{r}
+#| results: hide
+
+
+df <- df |> mutate(
+  salary=parse_number(data),
+  year=parse_integer(str_sub(period, 1, 4)),
+  month=parse_integer(str_sub(period, 6, 7)),
+  date=ymd(str_glue("{year}-{month}-01"))
+)
+```
+
+
+Looks like salaries are rising, but keep in mind - these are absolute numbers in UAH. 
+
+```{r}
+
+df |> ggplot(aes(x=date, y=salary)) +
+  geom_line() + 
+  geom_smooth(method = "loess", formula = y~x) +
+  labs(title="Salary by month", x="Date", y="Salary (UAH)")
+
+```
+
+
+
