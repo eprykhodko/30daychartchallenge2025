@@ -2,15 +2,15 @@
 title: "30daychartchallenge 2025"
 ---
 
-This is a Quarto website.
-
-To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
-
-```{r}
-1 + 2
-```
 
 
 # 2025 Charts
 00 - [practice](charts/practice01/practice01.qmd)
 
+## Comparisons
+01 - [Fractions](charts/01fractions/01fractions.qmd)
+
+
+
+This is a Quarto website.
+To learn more about Quarto websites visit <https://quarto.org/docs/websites>.

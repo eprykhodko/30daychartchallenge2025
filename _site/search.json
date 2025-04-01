@@ -11,7 +11,7 @@
     "href": "index.html",
     "title": "30daychartchallenge 2025",
     "section": "",
-    "text": "This is a Quarto website.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites.\n\n1 + 2\n\n[1] 3\n\n\n\n2025 Charts\n00 - practice"
+    "text": "00 - practice\n\n\n01 - Fractions\nThis is a Quarto website. To learn more about Quarto websites visit https://quarto.org/docs/websites."
   },
   {
     "objectID": "about.html",
@@ -19,5 +19,19 @@
     "title": "About",
     "section": "",
     "text": "About this site\n\n1 + 1\n\n[1] 2"
+  },
+  {
+    "objectID": "index.html#comparisons",
+    "href": "index.html#comparisons",
+    "title": "30daychartchallenge 2025",
+    "section": "",
+    "text": "01 - Fractions\nThis is a Quarto website. To learn more about Quarto websites visit https://quarto.org/docs/websites."
+  },
+  {
+    "objectID": "charts/01fractions/01fractions.html",
+    "href": "charts/01fractions/01fractions.html",
+    "title": "Day 1: Fractions",
+    "section": "",
+    "text": "df &lt;- read_csv(\n  'female.csv',\n ) |&gt;  rename(percent_female = data, year = period)\n\n\ndf$percent_male = 100 - df$percent_female\n\n# pivot longer extract percent from percent_male and percent_female\ndf &lt;- df |&gt; pivot_longer(\n  cols = starts_with(\"percent\"),\n  names_to = \"gender\",\n  values_to = \"percent\",\n  names_prefix = \"percent_\",\n)\n\nonly_female &lt;- df |&gt; filter(gender == \"female\")\n\n\ndf |&gt; ggplot(aes(year, percent, group = fct_relevel(gender, c(\"male\",\"female\") ) )) + \n  geom_area(aes(fill=gender),  position = \"stack\", alpha = 0.5) +\n  geom_line(data=only_female)+\n  scale_fill_brewer(palette = \"Set1\") +\n  scale_y_continuous(expand = c(0, 0)) +\n  scale_x_continuous(expand = c(0, 0)) +\n  labs(title=\"Percentage of women in Ukrainian parliament\", subtitle=\"1990-2020\", y=NULL)\n\n\n\n\n\n\n\n\ndata: https://data.gov.ua/dataset/ffa2876c-7605-4180-a765-4310a0d37cb1"
   }
 ]
