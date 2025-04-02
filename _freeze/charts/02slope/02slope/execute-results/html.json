@@ -1,0 +1,17 @@
+{
+  "hash": "01823ea55c4ba7aca135e40db6941bf0",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"Day 2: Slope\"\nformat: html\n---\n\n\n\n::: {.cell}\n\n```{.r .cell-code}\ndf  |> \n ggplot(aes(x=date, y=count)) +\n  geom_area(alpha=0.4) + \n  geom_smooth(se=FALSE) + \n  theme_minimal() +\n  labs(x=NULL, y=NULL, title=\"Cocnur T2 bookings in March 2025\")\n```\n\n::: {.cell-output-display}\n![](02slope_files/figure-html/unnamed-chunk-2-1.png){width=672}\n:::\n:::\n",
+    "supporting": [
+      "02slope_files"
+    ],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}
