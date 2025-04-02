@@ -2,13 +2,17 @@
 title: "30daychartchallenge 2025"
 ---
 
+# 2024 Charts
 
+Found on [observable](https://observablehq.com/@ericws?tab=notebooks)
 
 # 2025 Charts
 00 - [practice](charts/practice01/practice01.qmd)
 
 ## Comparisons
-01 - [Fractions](charts/01fractions/01fractions.qmd)
+
+- 01 - [Fractions](charts/01fractions/01fractions.qmd)
+- 02 - [Slope](charts/02slope/02slope.qmd)
 
 
 
