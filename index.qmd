@@ -13,6 +13,7 @@ Found on [observable](https://observablehq.com/@ericws?tab=notebooks)
 
 - 01 - [Fractions](charts/01fractions/01fractions.qmd)
 - 02 - [Slope](charts/02slope/02slope.qmd)
+- 02 - [Circular](charts/03circular/03circular.qmd)
 
 
 

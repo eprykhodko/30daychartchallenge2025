@@ -1,17 +1,17 @@
 [
   {
-    "objectID": "charts/02slope/02slope.html",
-    "href": "charts/02slope/02slope.html",
-    "title": "Day 2: Slope",
+    "objectID": "charts/01fractions/01fractions.html",
+    "href": "charts/01fractions/01fractions.html",
+    "title": "Day 1: Fractions",
     "section": "",
-    "text": "df  |&gt; \n ggplot(aes(x=date, y=count)) +\n  geom_area(alpha=0.4) + \n  geom_smooth(se=FALSE) + \n  theme_minimal() +\n  labs(x=NULL, y=NULL, title=\"Cocnur T2 bookings in March 2025\")"
+    "text": "df &lt;- read_csv(\n  'female.csv',\n ) |&gt;  rename(percent_female = data, year = period)\n\n\ndf$percent_male = 100 - df$percent_female\n\n# pivot longer extract percent from percent_male and percent_female\ndf &lt;- df |&gt; pivot_longer(\n  cols = starts_with(\"percent\"),\n  names_to = \"gender\",\n  values_to = \"percent\",\n  names_prefix = \"percent_\",\n)\n\nonly_female &lt;- df |&gt; filter(gender == \"female\")\n\n\ndf |&gt; ggplot(aes(year, percent, group = fct_relevel(gender, c(\"male\",\"female\") ) )) + \n  geom_area(aes(fill=gender),  position = \"stack\", alpha = 0.5) +\n  geom_line(data=only_female)+\n  scale_fill_brewer(palette = \"Set1\") +\n  scale_y_continuous(expand = c(0, 0)) +\n  scale_x_continuous(expand = c(0, 0)) +\n  labs(title=\"Percentage of women in Ukrainian parliament\", subtitle=\"1990-2020\", y=NULL)\n\n\n\n\n\n\n\n\ndata: https://data.gov.ua/dataset/ffa2876c-7605-4180-a765-4310a0d37cb1"
   },
   {
-    "objectID": "charts/practice01/practice01.html",
-    "href": "charts/practice01/practice01.html",
-    "title": "Chart exploring Ukraininan median salaries",
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
     "section": "",
-    "text": "Preparing data\n\ndf &lt;- df |&gt; mutate(\n  salary=parse_number(data),\n  year=parse_integer(str_sub(period, 1, 4)),\n  month=parse_integer(str_sub(period, 6, 7)),\n  date=ymd(str_glue(\"{year}-{month}-01\"))\n)\n\nLooks like salaries are rising, but keep in mind - these are absolute numbers in UAH.\n\ndf |&gt; ggplot(aes(x=date, y=salary)) +\n  geom_line() + \n  geom_smooth(method = \"loess\", formula = y~x) +\n  labs(title=\"Salary by month\", x=\"Date\", y=\"Salary (UAH)\")"
+    "text": "About this site\n\n1 + 1\n\n[1] 2"
   },
   {
     "objectID": "index.html",
@@ -25,20 +25,20 @@
     "href": "index.html#comparisons",
     "title": "30daychartchallenge 2025",
     "section": "Comparisons",
-    "text": "Comparisons\n\n01 - Fractions\n02 - Slope\n\nThis is a Quarto website. To learn more about Quarto websites visit https://quarto.org/docs/websites."
+    "text": "Comparisons\n\n01 - Fractions\n02 - Slope\n02 - Circular\n\nThis is a Quarto website. To learn more about Quarto websites visit https://quarto.org/docs/websites."
   },
   {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
+    "objectID": "charts/practice01/practice01.html",
+    "href": "charts/practice01/practice01.html",
+    "title": "Chart exploring Ukraininan median salaries",
     "section": "",
-    "text": "About this site\n\n1 + 1\n\n[1] 2"
+    "text": "Preparing data\n\ndf &lt;- df |&gt; mutate(\n  salary=parse_number(data),\n  year=parse_integer(str_sub(period, 1, 4)),\n  month=parse_integer(str_sub(period, 6, 7)),\n  date=ymd(str_glue(\"{year}-{month}-01\"))\n)\n\nLooks like salaries are rising, but keep in mind - these are absolute numbers in UAH.\n\ndf |&gt; ggplot(aes(x=date, y=salary)) +\n  geom_line() + \n  geom_smooth(method = \"loess\", formula = y~x) +\n  labs(title=\"Salary by month\", x=\"Date\", y=\"Salary (UAH)\")"
   },
   {
-    "objectID": "charts/01fractions/01fractions.html",
-    "href": "charts/01fractions/01fractions.html",
-    "title": "Day 1: Fractions",
+    "objectID": "charts/02slope/02slope.html",
+    "href": "charts/02slope/02slope.html",
+    "title": "Day 2: Slope",
     "section": "",
-    "text": "df &lt;- read_csv(\n  'female.csv',\n ) |&gt;  rename(percent_female = data, year = period)\n\n\ndf$percent_male = 100 - df$percent_female\n\n# pivot longer extract percent from percent_male and percent_female\ndf &lt;- df |&gt; pivot_longer(\n  cols = starts_with(\"percent\"),\n  names_to = \"gender\",\n  values_to = \"percent\",\n  names_prefix = \"percent_\",\n)\n\nonly_female &lt;- df |&gt; filter(gender == \"female\")\n\n\ndf |&gt; ggplot(aes(year, percent, group = fct_relevel(gender, c(\"male\",\"female\") ) )) + \n  geom_area(aes(fill=gender),  position = \"stack\", alpha = 0.5) +\n  geom_line(data=only_female)+\n  scale_fill_brewer(palette = \"Set1\") +\n  scale_y_continuous(expand = c(0, 0)) +\n  scale_x_continuous(expand = c(0, 0)) +\n  labs(title=\"Percentage of women in Ukrainian parliament\", subtitle=\"1990-2020\", y=NULL)\n\n\n\n\n\n\n\n\ndata: https://data.gov.ua/dataset/ffa2876c-7605-4180-a765-4310a0d37cb1"
+    "text": "df  |&gt; \n ggplot(aes(x=date, y=count)) +\n  geom_area(alpha=0.4) + \n  geom_smooth(se=FALSE) + \n  theme_minimal() +\n  labs(x=NULL, y=NULL, title=\"Cocnur T2 bookings in March 2025\")"
   }
 ]
