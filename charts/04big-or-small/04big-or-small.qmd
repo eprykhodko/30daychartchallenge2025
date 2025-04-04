@@ -11,6 +11,11 @@ execute:
 ```{r}
 library(tidyverse)
 library(camcorder)
+library(showtext)
+library(cropcircles)
+library(ggimage)
+library(ggtext)
+
 ```
 
 ```{r}
@@ -20,6 +25,7 @@ font_add_google("Ubuntu", "ubuntu")
 main_color <- "#fee706"
 bg_col <- "#000033"
 body_font <- "ubuntu"
+
 
 ```
 
