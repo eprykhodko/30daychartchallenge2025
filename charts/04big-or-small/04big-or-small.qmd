@@ -1,0 +1,73 @@
+---
+title: "Day 4: Big or Small"
+format: html
+execute:
+  eval: true
+  echo: false
+  message: false
+  warning: false
+---
+
+```{r}
+library(tidyverse)
+library(camcorder)
+```
+
+```{r}
+
+font_add_google("Ubuntu", "ubuntu")
+
+main_color <- "#fee706"
+bg_col <- "#000033"
+body_font <- "ubuntu"
+
+```
+
+```{r}
+df <- tribble(
+  ~date, ~img, ~weight,
+  ymd('2024-12-22'), 'po.png', 2.41,
+  ymd('2025-04-04'), 'po2.png', 7.4,
+)
+
+df <- df |> mutate(
+    img_circ = crop_circle(
+      file.path(img),
+      border_size = 16,
+      border_colour = main_color
+ )
+)
+
+```
+
+```{r}
+tag <- "Poe used to be small. She is now BIG"
+```
+
+```{r}
+df |> ggplot(aes(x=factor(date), y=weight, group = 1)) +
+  geom_line(linewidth=5, color = main_color) +
+  geom_image(aes(image = img_circ), size=.5) +
+  labs(tag = tag, x = "time", y = "size") +
+  ylim(-3, 15)+
+  theme_minimal(base_size = 30, base_family = body_font) +
+  theme(
+    plot.margin = margin(15, 15, -10, 5),
+    plot.background = element_rect(fill = bg_col, colour = bg_col),
+    panel.background = element_rect(fill = bg_col, colour = bg_col),
+    plot.tag.position = c(.4, 1.2),
+    plot.tag = element_textbox_simple(
+      colour = main_color,
+      vjust = 2,
+      valign = 1,
+      margin = margin(b = 10, t = 10),
+      lineheight = 0.5,
+      family = body_font,
+      size = rel(0.8),
+      maxwidth = 0.7
+    ),
+    axis.text.x = element_blank(),
+    axis.text.y = element_blank(),
+    panel.grid = element_blank()
+  )
+```
