@@ -16,6 +16,7 @@ Found on [observable](https://observablehq.com/@ericws?tab=notebooks)
 - 02 - [Circular](charts/03circular/03circular.qmd)
 - 04 - [Big or Small](charts/04big-or-small/04big-or-small.qmd)
 - 05 - [Rankings](charts/05rankings/05rankings.qmd)
+- 06 - [Florence Nightingale](charts/06florence-nightingale/06florence-nightingale.qmd)
 
 
 
