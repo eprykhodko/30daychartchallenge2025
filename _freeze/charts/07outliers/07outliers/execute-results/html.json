@@ -1,0 +1,17 @@
+{
+  "hash": "39e3ea94096735e3fc345f3f9010e2c5",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"Day 7: Outliers\"\nformat: html\nexecute:\n  eval: true\n  echo: false\n  message: false\n  warning: false\n---\n\n::: {.cell name='load libs'}\n\n:::\n\n::: {.cell name='load and wrangle data'}\n\n:::\n\n::: {.cell name='draw'}\n::: {.cell-output-display}\n![](07outliers_files/figure-html/unnamed-chunk-3-1.png){width=672}\n:::\n:::",
+    "supporting": [
+      "07outliers_files"
+    ],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

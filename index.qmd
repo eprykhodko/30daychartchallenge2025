@@ -20,5 +20,9 @@ Found on [observable](https://observablehq.com/@ericws?tab=notebooks)
 
 
 
+## Distributions
+- 07 - [Outliers](charts/07outliers/07outliers.qmd)
+
+
 This is a Quarto website.
 To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
