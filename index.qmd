@@ -4,10 +4,9 @@ title: "30daychartchallenge 2025"
 
 # 2024 Charts
 
-Found on [observable](https://observablehq.com/@ericws?tab=notebooks)
+Found on [observable](https://observablehq.com/collection/@ericws/30daychartchallenge2024)
 
 # 2025 Charts
-00 - [practice](charts/practice01/practice01.qmd)
 
 ## Comparisons
 
@@ -17,7 +16,6 @@ Found on [observable](https://observablehq.com/@ericws?tab=notebooks)
 - 04 - [Big or Small](charts/04big-or-small/04big-or-small.qmd)
 - 05 - [Rankings](charts/05rankings/05rankings.qmd)
 - 06 - [Florence Nightingale](charts/06florence-nightingale/06florence-nightingale.qmd)
-
 
 
 ## Distributions
