@@ -1,5 +1,19 @@
 [
   {
+    "objectID": "charts/09diverging/09diverging.html",
+    "href": "charts/09diverging/09diverging.html",
+    "title": "Day 9: Diverging",
+    "section": "",
+    "text": "Данні: Держстат"
+  },
+  {
+    "objectID": "charts/09diverging/09diverging.html#різниця-середніх-заробітних-план-чоловіків-і-жінок.",
+    "href": "charts/09diverging/09diverging.html#різниця-середніх-заробітних-план-чоловіків-і-жінок.",
+    "title": "Day 9: Diverging",
+    "section": "",
+    "text": "Данні: Держстат"
+  },
+  {
     "objectID": "charts/01fractions/01fractions.html",
     "href": "charts/01fractions/01fractions.html",
     "title": "Day 1: Fractions",
@@ -32,7 +46,7 @@
     "href": "index.html#distributions",
     "title": "30daychartchallenge 2025",
     "section": "Distributions",
-    "text": "Distributions\n\n07 - Outliers\n\nThis is a Quarto website. To learn more about Quarto websites visit https://quarto.org/docs/websites."
+    "text": "Distributions\n\n07 - Outliers\n08 - Histogram\n09 - Diverging\n\nThis is a Quarto website. To learn more about Quarto websites visit https://quarto.org/docs/websites."
   },
   {
     "objectID": "charts/practice01/practice01.html",

@@ -45,5 +45,5 @@ all_data |>
     subtitle = "Sequels tend to be better return on investment compared to original ideas",
     x = "Budget",
     y = "Box Office Worldwide"
-  ) +
+  )
 ```
