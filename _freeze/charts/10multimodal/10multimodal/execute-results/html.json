@@ -1,8 +1,8 @@
 {
-  "hash": "5bbcef434944f5297b64565d730523a1",
+  "hash": "aba210dd41778d80de52e40692967375",
   "result": {
     "engine": "knitr",
-    "markdown": "---\ntitle: \"Day 10: Multimodal\"\nformat: html\nexecute:\n  eval: true\n  echo: false\n  message: false\n  warning: false\nproject:\n  execute-dir: project\n---\n\n\n\n[Multimodality](https://en.wikipedia.org/wiki/Multimodality) is the application of multiple literacies within one medium. \n\n\n\n::: {.cell}\n\n:::\n\n::: {.cell}\n\n:::\n\n::: {.cell}\n::: {.cell-output-display}\n![](10multimodal_files/figure-html/unnamed-chunk-3-1.png){width=672}\n:::\n:::\n",
+    "markdown": "---\ntitle: \"Day 10: Multimodal\"\nformat: html\nexecute:\n  eval: true\n  echo: false\n  message: false\n  warning: false\n---\n\n\n\n\n\n\n\n[Multimodality](https://en.wikipedia.org/wiki/Multimodality) is the application of multiple literacies within one medium. \n\n\n\n\n\n\n\n::: {.cell}\n\n:::\n\n::: {.cell}\n\n:::\n\n::: {.cell}\n::: {.cell-output-display}\n![](10multimodal_files/figure-html/unnamed-chunk-3-1.png){width=672}\n:::\n:::\n",
     "supporting": [
       "10multimodal_files"
     ],

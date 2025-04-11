@@ -23,6 +23,8 @@ Found on [observable](https://observablehq.com/collection/@ericws/30daychartchal
 - 08 - [Histogram](charts/08histogram/08histogram.qmd)
 - 09 - [Diverging](/charts/09diverging/09diverging.qmd)
 - 10 - [Multimodal](/charts/10multimodal/10multimodal.qmd)
+- 11 - [Striptes](/charts/11stripes/11stripes.qmd)
+
 
 
 
