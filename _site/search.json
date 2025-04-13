@@ -1,38 +1,31 @@
 [
   {
-    "objectID": "charts/12datagov/12datagov.html",
-    "href": "charts/12datagov/12datagov.html",
-    "title": "Day 12: data.gov",
+    "objectID": "charts/09diverging/09diverging.html",
+    "href": "charts/09diverging/09diverging.html",
+    "title": "Day 9: Diverging",
     "section": "",
-    "text": "Exploring relationship between fine particles measured in the air and number of hospitalizations due to fine particles."
+    "text": "Данні: Держстат"
   },
   {
-    "objectID": "charts/10multimodal/10multimodal.html",
-    "href": "charts/10multimodal/10multimodal.html",
-    "title": "Day 10: Multimodal",
+    "objectID": "charts/09diverging/09diverging.html#різниця-середніх-заробітних-план-чоловіків-і-жінок.",
+    "href": "charts/09diverging/09diverging.html#різниця-середніх-заробітних-план-чоловіків-і-жінок.",
+    "title": "Day 9: Diverging",
     "section": "",
-    "text": "Multimodality is the application of multiple literacies within one medium."
+    "text": "Данні: Держстат"
   },
   {
-    "objectID": "charts/06florence-nightingale/06florence-nightingale.html",
-    "href": "charts/06florence-nightingale/06florence-nightingale.html",
-    "title": "Day 6: Florence Nightingale",
+    "objectID": "charts/01fractions/01fractions.html",
+    "href": "charts/01fractions/01fractions.html",
+    "title": "Day 1: Fractions",
     "section": "",
-    "text": "Exploring injury rates at Ukrainian enterprises. Inspired by Florence Nightingale’s circular plots\n\n\n\n\n\n\n\n\n\ndata from stat.gov.ua"
+    "text": "df &lt;- read_csv(\n  'female.csv',\n ) |&gt;  rename(percent_female = data, year = period)\n\n\ndf$percent_male = 100 - df$percent_female\n\n# pivot longer extract percent from percent_male and percent_female\ndf &lt;- df |&gt; pivot_longer(\n  cols = starts_with(\"percent\"),\n  names_to = \"gender\",\n  values_to = \"percent\",\n  names_prefix = \"percent_\",\n)\n\nonly_female &lt;- df |&gt; filter(gender == \"female\")\n\n\ndf |&gt; ggplot(aes(year, percent, group = fct_relevel(gender, c(\"male\",\"female\") ) )) + \n  geom_area(aes(fill=gender),  position = \"stack\", alpha = 0.5) +\n  geom_line(data=only_female)+\n  scale_fill_brewer(palette = \"Set1\") +\n  scale_y_continuous(expand = c(0, 0)) +\n  scale_x_continuous(expand = c(0, 0)) +\n  labs(title=\"Percentage of women in Ukrainian parliament\", subtitle=\"1990-2020\", y=NULL)\n\n\n\n\n\n\n\n\ndata: https://data.gov.ua/dataset/ffa2876c-7605-4180-a765-4310a0d37cb1"
   },
   {
-    "objectID": "charts/02slope/02slope.html",
-    "href": "charts/02slope/02slope.html",
-    "title": "Day 2: Slope",
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
     "section": "",
-    "text": "df  |&gt; \n ggplot(aes(x=date, y=count)) +\n  geom_area(alpha=0.4) + \n  geom_smooth(se=FALSE) + \n  theme_minimal() +\n  labs(x=NULL, y=NULL, title=\"Cocnur T2 bookings in March 2025\")"
-  },
-  {
-    "objectID": "charts/practice01/practice01.html",
-    "href": "charts/practice01/practice01.html",
-    "title": "Chart exploring Ukraininan median salaries",
-    "section": "",
-    "text": "Preparing data\n\ndf &lt;- df |&gt; mutate(\n  salary=parse_number(data),\n  year=parse_integer(str_sub(period, 1, 4)),\n  month=parse_integer(str_sub(period, 6, 7)),\n  date=ymd(str_glue(\"{year}-{month}-01\"))\n)\n\nLooks like salaries are rising, but keep in mind - these are absolute numbers in UAH.\n\ndf |&gt; ggplot(aes(x=date, y=salary)) +\n  geom_line() + \n  geom_smooth(method = \"loess\", formula = y~x) +\n  labs(title=\"Salary by month\", x=\"Date\", y=\"Salary (UAH)\")"
+    "text": "About this site\n\n1 + 1\n\n[1] 2"
   },
   {
     "objectID": "index.html",
@@ -63,31 +56,38 @@
     "text": "Relationships\n\n13 - Clusters\n14 - Kinship\n\nThis is a Quarto website. To learn more about Quarto websites visit https://quarto.org/docs/websites."
   },
   {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
+    "objectID": "charts/practice01/practice01.html",
+    "href": "charts/practice01/practice01.html",
+    "title": "Chart exploring Ukraininan median salaries",
     "section": "",
-    "text": "About this site\n\n1 + 1\n\n[1] 2"
+    "text": "Preparing data\n\ndf &lt;- df |&gt; mutate(\n  salary=parse_number(data),\n  year=parse_integer(str_sub(period, 1, 4)),\n  month=parse_integer(str_sub(period, 6, 7)),\n  date=ymd(str_glue(\"{year}-{month}-01\"))\n)\n\nLooks like salaries are rising, but keep in mind - these are absolute numbers in UAH.\n\ndf |&gt; ggplot(aes(x=date, y=salary)) +\n  geom_line() + \n  geom_smooth(method = \"loess\", formula = y~x) +\n  labs(title=\"Salary by month\", x=\"Date\", y=\"Salary (UAH)\")"
   },
   {
-    "objectID": "charts/01fractions/01fractions.html",
-    "href": "charts/01fractions/01fractions.html",
-    "title": "Day 1: Fractions",
+    "objectID": "charts/02slope/02slope.html",
+    "href": "charts/02slope/02slope.html",
+    "title": "Day 2: Slope",
     "section": "",
-    "text": "df &lt;- read_csv(\n  'female.csv',\n ) |&gt;  rename(percent_female = data, year = period)\n\n\ndf$percent_male = 100 - df$percent_female\n\n# pivot longer extract percent from percent_male and percent_female\ndf &lt;- df |&gt; pivot_longer(\n  cols = starts_with(\"percent\"),\n  names_to = \"gender\",\n  values_to = \"percent\",\n  names_prefix = \"percent_\",\n)\n\nonly_female &lt;- df |&gt; filter(gender == \"female\")\n\n\ndf |&gt; ggplot(aes(year, percent, group = fct_relevel(gender, c(\"male\",\"female\") ) )) + \n  geom_area(aes(fill=gender),  position = \"stack\", alpha = 0.5) +\n  geom_line(data=only_female)+\n  scale_fill_brewer(palette = \"Set1\") +\n  scale_y_continuous(expand = c(0, 0)) +\n  scale_x_continuous(expand = c(0, 0)) +\n  labs(title=\"Percentage of women in Ukrainian parliament\", subtitle=\"1990-2020\", y=NULL)\n\n\n\n\n\n\n\n\ndata: https://data.gov.ua/dataset/ffa2876c-7605-4180-a765-4310a0d37cb1"
+    "text": "df  |&gt; \n ggplot(aes(x=date, y=count)) +\n  geom_area(alpha=0.4) + \n  geom_smooth(se=FALSE) + \n  theme_minimal() +\n  labs(x=NULL, y=NULL, title=\"Cocnur T2 bookings in March 2025\")"
   },
   {
-    "objectID": "charts/09diverging/09diverging.html",
-    "href": "charts/09diverging/09diverging.html",
-    "title": "Day 9: Diverging",
+    "objectID": "charts/06florence-nightingale/06florence-nightingale.html",
+    "href": "charts/06florence-nightingale/06florence-nightingale.html",
+    "title": "Day 6: Florence Nightingale",
     "section": "",
-    "text": "Данні: Держстат"
+    "text": "Exploring injury rates at Ukrainian enterprises. Inspired by Florence Nightingale’s circular plots\n\n\n\n\n\n\n\n\n\ndata from stat.gov.ua"
   },
   {
-    "objectID": "charts/09diverging/09diverging.html#різниця-середніх-заробітних-план-чоловіків-і-жінок.",
-    "href": "charts/09diverging/09diverging.html#різниця-середніх-заробітних-план-чоловіків-і-жінок.",
-    "title": "Day 9: Diverging",
+    "objectID": "charts/10multimodal/10multimodal.html",
+    "href": "charts/10multimodal/10multimodal.html",
+    "title": "Day 10: Multimodal",
     "section": "",
-    "text": "Данні: Держстат"
+    "text": "Multimodality is the application of multiple literacies within one medium."
+  },
+  {
+    "objectID": "charts/12datagov/12datagov.html",
+    "href": "charts/12datagov/12datagov.html",
+    "title": "Day 12: data.gov",
+    "section": "",
+    "text": "Exploring relationship between fine particles measured in the air and number of hospitalizations due to fine particles."
   }
 ]
