@@ -1,0 +1,17 @@
+{
+  "hash": "93a1b76e1f490774c0900db9e6b2ed2a",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"Day 14: Kinship\"\nformat: html\nexecute:\n  eval: true\n  echo: false\n  message: false\n  warning: false\n---\n\n\n\nКняжицькі коти\n\n\n\n\n::: {.cell}\n\n:::\n\n::: {.cell}\n::: {.cell-output-display}\n![](14kinship_files/figure-html/unnamed-chunk-2-1.png){width=672}\n:::\n:::\n",
+    "supporting": [
+      "14kinship_files"
+    ],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

@@ -28,8 +28,7 @@ Found on [observable](https://observablehq.com/collection/@ericws/30daychartchal
 
 ## Relationships
 - 13 - [Clusters](charts/13clusters/13clusters.qmd)
-- 14 - Kinship
-
+- 14 - [Kinship](charts/14kinship/14kinship.qmd)
 
 
 
