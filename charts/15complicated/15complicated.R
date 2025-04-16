@@ -92,5 +92,3 @@ invisible(dev.off())
 knitr::include_graphics("https://github.com/holtzy/R-graph-gallery/blob/master/character-interaction-analysis/17-network-the-office-mentions.png?raw=true")
 
 
-
-
