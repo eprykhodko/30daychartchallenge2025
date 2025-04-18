@@ -1,0 +1,17 @@
+{
+  "hash": "b34daaf068147126615e1d3c5803d81e",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"Day 18: El Pais\"\nformat: html\nexecute:\n  eval: true\n  echo: false\n  message: false\n  warning: false\n---\n\n\n\n\nInspired by El Pais [40dB Survey](https://elpais.com/espana/2025-04-07/consulte-todos-los-datos-internos-de-la-encuesta-de-el-pais-cuestionarios-cruces-y-respuestas-individuales.html) And specifically this slide\n\n![](elpais.png)\n\n\n\n\n::: {.cell}\n\n:::\n\n\n\n\nExploring the dynamic of prices in Ukraine\n\n\n\n\n::: {.cell}\n::: {.cell-output-display}\n![](18elpais_files/figure-html/unnamed-chunk-2-1.png)\n:::\n:::\n",
+    "supporting": [
+      "18elpais_files"
+    ],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

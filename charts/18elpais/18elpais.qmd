@@ -1,0 +1,77 @@
+---
+title: "Day 18: El Pais"
+format: html
+execute:
+  eval: true
+  echo: false
+  message: false
+  warning: false
+---
+
+Inspired by El Pais [40dB Survey](https://elpais.com/espana/2025-04-07/consulte-todos-los-datos-internos-de-la-encuesta-de-el-pais-cuestionarios-cruces-y-respuestas-individuales.html) And specifically this slide
+
+![](elpais.png)
+
+```{r}
+library(tidyverse)
+library(ggalt)
+library(ggtext)
+library(showtext)
+
+
+font <- "Montserrat"
+font_add_google(font, font)
+
+
+df <- read_csv('prices.csv')
+
+red <- "#E53935"
+green <- "#8BC34A"
+blue <- "#1565C0"
+```
+
+Exploring the dynamic of prices in Ukraine
+
+```{r, fig.retina=TRUE, fig.asp=0.4}
+df |> 
+  filter(`Територіальний розріз` == "Україна") |> 
+  pivot_longer(
+    cols = starts_with("202"),
+    names_to = "yrmonth",
+    values_to = "price",
+  ) |> 
+  ggplot(aes(x=yrmonth, y=price, color=`Тип товарів і послуг`)) +
+  stat_xspline(
+    aes(group = `Тип товарів і послуг`, color=`Тип товарів і послуг`),
+    linetype = "52",
+    lwd = 1,
+    spline_shape = .9
+  ) +
+  geom_text(
+    data = . %>%  filter(str_detect(yrmonth, "M01")),
+    mapping = aes(label = price),
+    nudge_y = 1,
+    nudge_x = .7,
+    family=font,
+  ) + 
+  geom_text(label = "БАТОН", x="2024-M05", y= 20, color=red, family=font, fontface="bold") +
+  geom_text(label = "ПИВО", x="2024-M01", y= 30, color=green, family=font, fontface="bold") +
+  geom_text(label = "ЯЙЦЯ", x="2023-M01", y= 57, color=blue, family=font, fontface="bold") +
+  #hide legend
+  theme_void() + 
+  #rotate x axis labels
+  theme(
+    axis.text.x = element_text(hjust = 1, family=font, face="bold"),
+    plot.title = element_text(family=font, face="bold", size=28),
+    plot.subtitle = element_text(family=font, size=12, color=grey(.5)),
+  ) +
+  theme(legend.position = "none") +
+  scale_color_manual(values = c(red, green, blue)) +
+  scale_x_discrete(breaks = c("2020-M06", "2021-M06", "2022-M06", "2023-M06", "2024-M06"), labels = c("2020", "2021", "2022", "2023", "2024"))+
+  labs(
+    title = "Prices in Ukraine",
+    subtitle = "Absolute price of selected products over the years",
+    caption = "Source: State Statistics Service of Ukraine"
+  )
+
+```

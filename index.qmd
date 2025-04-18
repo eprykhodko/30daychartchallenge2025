@@ -32,7 +32,7 @@ Found on [observable](https://observablehq.com/collection/@ericws/30daychartchal
 - 15 - [Complicated](charts/15complicated/15complicated.qmd)
 - 16 - [Negative](charts/16negative/16negative.qmd)
 - 17 - [Birds](charts/17birds/17birds.qmd)
-- 18 - [El Pais]
+- 18 - [El Pais](charts/18elpais/18elpais.qmd)
 
 ## Timeseries
 
