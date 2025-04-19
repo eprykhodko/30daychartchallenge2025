@@ -1,0 +1,36 @@
+---
+title: "Day 20: Urbanisation"
+format: html
+execute:
+  eval: true
+  echo: false
+  message: false
+  warning: false
+---
+
+```{r}
+library(sf)
+library(tidyverse)
+library(stringr)
+library(paletteer)
+
+ukraine1 <- st_read("gadm41_UKR_1.json")
+city <- read_csv("city.csv") |> mutate(`GID_1` = glue::glue("{GID_1}_1"), pct=parse_integer(str_match(VALUE, "\\d+")))
+
+
+center_df <-  tibble(sf::st_centroid(ukraine1$geometry))
+ukraine1$centers <- center_df$`sf::st_centroid(ukraine1$geometry)`
+
+
+ukraine1 |> left_join(city) |>
+  ggplot() +  
+  geom_sf(aes(fill=pct), color="white") +
+  geom_sf_label(aes(coordinates=centers, label=ifelse(pct, str_glue("{pct}%"), NULL)), size=3) +
+  theme_void() +
+  scale_fill_distiller(palette = "YlGn", direction=1) +
+  labs(
+    title = "Urbanisation in Ukraine",
+    subtitle = "Percentage of urban population by region in 2025",
+    caption = "data: https://voxukraine.org/urbanizatsiya-v-ukrayini"
+  )
+```

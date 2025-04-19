@@ -4,7 +4,7 @@
     "href": "charts/18elpais/18elpais.html",
     "title": "Day 18: El Pais",
     "section": "",
-    "text": "Inspired by El Pais 40dB Survey And specifically this slide\n\nExploring the dynamic of prices in Ukraine"
+    "text": "Inspired by El Pais 40dB Survey And specifically this slide\n\nExploring the dynamics of prices in Ukraine"
   },
   {
     "objectID": "charts/14kinship/14kinship.html",
@@ -81,7 +81,7 @@
     "href": "index.html#timeseries",
     "title": "30daychartchallenge 2025",
     "section": "Timeseries",
-    "text": "Timeseries"
+    "text": "Timeseries\n\n19 - Smooth\n20 - Urbanisation"
   },
   {
     "objectID": "index.html#uncertainties",
@@ -152,5 +152,19 @@
     "title": "Day 17: Birds",
     "section": "",
     "text": "penguins |&gt; tidyplot(y=island,  x = body_mass_g, fill=species) |&gt; add_violin() |&gt; add_data_points_beeswarm()"
+  },
+  {
+    "objectID": "charts/19smooth/19smooth.html",
+    "href": "charts/19smooth/19smooth.html",
+    "title": "Day 19: Smooth",
+    "section": "",
+    "text": "Day 18 chart"
+  },
+  {
+    "objectID": "charts/20urbanisation/20urbanisation.html",
+    "href": "charts/20urbanisation/20urbanisation.html",
+    "title": "Day 20: Urbanisation",
+    "section": "",
+    "text": "Reading layer `gadm41_UKR_1' from data source \n  `/home/eric/RPractice/thirtydaychartchallenge2025/charts/20urbanisation/gadm41_UKR_1.json' \n  using driver `GeoJSON'\nSimple feature collection with 28 features and 11 fields\nGeometry type: MULTIPOLYGON\nDimension:     XY\nBounding box:  xmin: 22.1404 ymin: 44.386 xmax: 40.2181 ymax: 52.375\nGeodetic CRS:  WGS 84"
   }
 ]

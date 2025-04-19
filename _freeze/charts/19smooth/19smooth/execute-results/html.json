@@ -1,0 +1,17 @@
+{
+  "hash": "48c044d200b36730522fe23506edc45d",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"Day 19: Smooth\"\nformat: html\nexecute:\n  eval: true\n  echo: false\n  message: false\n  warning: false\n---\n\n\n\nA musch smoother version of [Day 18 chart](./../18elpais/18elpais.qmd) using {ggbump}\n\n\n\n::: {.cell}\n\n```{.r .cell-code}\nlibrary(tidyverse)\nlibrary(ggbump)\n\n\ndf <- read_csv('./../18elpais/prices.csv')\n\ndf |> \n  filter(`Територіальний розріз` == \"Україна\") |> \n  pivot_longer(\n    cols = starts_with(\"202\"),\n    names_to = \"yrmonth\",\n    values_to = \"price\",\n  ) |> \n  filter(str_detect(yrmonth, \"M01\")) |> \n  ggplot(aes(x=yrmonth, y=price, color=`Тип товарів і послуг`, group = `Тип товарів і послуг`)) +\n  geom_bump(size=2, smooth=10) +\n  geom_point(size=5) +\n  geom_point(size=2, color=\"darkgrey\") +\n  theme_dark() +\n  paletteer::scale_color_paletteer_d(\"nbapalettes::lakers_alt\")\n```\n\n::: {.cell-output-display}\n![](19smooth_files/figure-html/unnamed-chunk-1-1.png)\n:::\n:::\n",
+    "supporting": [
+      "19smooth_files"
+    ],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

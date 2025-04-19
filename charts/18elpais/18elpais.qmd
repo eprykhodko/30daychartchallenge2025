@@ -30,7 +30,7 @@ green <- "#8BC34A"
 blue <- "#1565C0"
 ```
 
-Exploring the dynamic of prices in Ukraine
+Exploring the dynamics of prices in Ukraine
 
 ```{r, fig.retina=TRUE, fig.asp=0.4}
 df |> 

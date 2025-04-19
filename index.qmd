@@ -10,34 +10,36 @@ Found on [observable](https://observablehq.com/collection/@ericws/30daychartchal
 
 ## Comparisons
 
-- 01 - [Fractions](charts/01fractions/01fractions.qmd)
-- 02 - [Slope](charts/02slope/02slope.qmd)
-- 02 - [Circular](charts/03circular/03circular.qmd)
-- 04 - [Big or Small](charts/04big-or-small/04big-or-small.qmd)
-- 05 - [Rankings](charts/05rankings/05rankings.qmd)
-- 06 - [Florence Nightingale](charts/06florence-nightingale/06florence-nightingale.qmd)
-
+-   01 - [Fractions](charts/01fractions/01fractions.qmd)
+-   02 - [Slope](charts/02slope/02slope.qmd)
+-   02 - [Circular](charts/03circular/03circular.qmd)
+-   04 - [Big or Small](charts/04big-or-small/04big-or-small.qmd)
+-   05 - [Rankings](charts/05rankings/05rankings.qmd)
+-   06 - [Florence Nightingale](charts/06florence-nightingale/06florence-nightingale.qmd)
 
 ## Distributions
-- 07 - [Outliers](charts/07outliers/07outliers.qmd)
-- 08 - [Histogram](charts/08histogram/08histogram.qmd)
-- 09 - [Diverging](charts/09diverging/09diverging.qmd)
-- 10 - [Multimodal](charts/10multimodal/10multimodal.qmd)
-- 11 - [Striptes](charts/11stripes/11stripes.qmd)
-- 12 - [Data day: data.gov](charts/12datagov/12datagov.qmd)
+
+-   07 - [Outliers](charts/07outliers/07outliers.qmd)
+-   08 - [Histogram](charts/08histogram/08histogram.qmd)
+-   09 - [Diverging](charts/09diverging/09diverging.qmd)
+-   10 - [Multimodal](charts/10multimodal/10multimodal.qmd)
+-   11 - [Striptes](charts/11stripes/11stripes.qmd)
+-   12 - [Data day: data.gov](charts/12datagov/12datagov.qmd)
 
 ## Relationships
-- 13 - [Clusters](charts/13clusters/13clusters.qmd)
-- 14 - [Kinship](charts/14kinship/14kinship.qmd) 
-- 15 - [Complicated](charts/15complicated/15complicated.qmd)
-- 16 - [Negative](charts/16negative/16negative.qmd)
-- 17 - [Birds](charts/17birds/17birds.qmd)
-- 18 - [El Pais](charts/18elpais/18elpais.qmd)
+
+-   13 - [Clusters](charts/13clusters/13clusters.qmd)
+-   14 - [Kinship](charts/14kinship/14kinship.qmd)
+-   15 - [Complicated](charts/15complicated/15complicated.qmd)
+-   16 - [Negative](charts/16negative/16negative.qmd)
+-   17 - [Birds](charts/17birds/17birds.qmd)
+-   18 - [El Pais](charts/18elpais/18elpais.qmd)
 
 ## Timeseries
 
+-   19 - [Smooth](charts/19smooth/19smooth.qmd)
+-   20 - [Urbanisation](charts/20urbanisation/20urbanisation.qmd)
+
 ## Uncertainties
 
-
-This is a Quarto website.
-To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
+This is a Quarto website. To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
