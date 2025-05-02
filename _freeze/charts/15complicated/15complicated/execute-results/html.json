@@ -1,0 +1,17 @@
+{
+  "hash": "118f49c3b30372fee0dda1c2a89b37da",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"Day 15: Complicated\"\nformat: html\nexecute:\n  eval: true\n  echo: false\n  message: false\n  warning: false\n---\n\n\n\n\nCreating a chord diagram is very complicated :( \n\n\n\n\n::: {.cell}\n::: {.cell-output-display}\n![](15complicated_files/figure-html/unnamed-chunk-1-1.png){width=672}\n:::\n:::",
+    "supporting": [
+      "15complicated_files"
+    ],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

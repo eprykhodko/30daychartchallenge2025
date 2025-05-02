@@ -1,0 +1,17 @@
+{
+  "hash": "23424b43437f3bbfb0eefa8a9d290638",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"Day 1: Fractions\"\nformat: html\n---\n\n\n\n::: {.cell}\n\n```{.r .cell-code}\ndf <- read_csv(\n  'female.csv',\n ) |>  rename(percent_female = data, year = period)\n\n\ndf$percent_male = 100 - df$percent_female\n\n# pivot longer extract percent from percent_male and percent_female\ndf <- df |> pivot_longer(\n  cols = starts_with(\"percent\"),\n  names_to = \"gender\",\n  values_to = \"percent\",\n  names_prefix = \"percent_\",\n)\n\nonly_female <- df |> filter(gender == \"female\")\n```\n:::\n\n::: {.cell}\n\n```{.r .cell-code}\ndf |> ggplot(aes(year, percent, group = fct_relevel(gender, c(\"male\",\"female\") ) )) + \n  geom_area(aes(fill=gender),  position = \"stack\", alpha = 0.5) +\n  geom_line(data=only_female)+\n  scale_fill_brewer(palette = \"Set1\") +\n  scale_y_continuous(expand = c(0, 0)) +\n  scale_x_continuous(expand = c(0, 0)) +\n  labs(title=\"Percentage of women in Ukrainian parliament\", subtitle=\"1990-2020\", y=NULL)\n```\n\n::: {.cell-output-display}\n![](01fractions_files/figure-html/unnamed-chunk-3-1.png){width=672}\n:::\n:::\n\n\n\n\n_data_: https://data.gov.ua/dataset/ffa2876c-7605-4180-a765-4310a0d37cb1",
+    "supporting": [
+      "01fractions_files"
+    ],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

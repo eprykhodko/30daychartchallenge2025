@@ -1,0 +1,17 @@
+{
+  "hash": "d6721012eac2ca8f5d380fd9c3104b00",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"Day 27: Noise (NOICE, TOIT, COOL, COOL, COOL, COOL, COOL)\"\nformat: html\nexecute:\n  eval: true\n  echo: false\n  message: false\n  warning: false\n---\n\n\nNo doubt.\n\n\n\n::: {.cell}\n\n:::\n\n::: {.cell}\n\n:::\n\n::: {.cell}\n\n:::\n\n::: {.cell}\n::: {.cell-output-display}\n![](27noise_files/figure-html/unnamed-chunk-4-1.png)\n:::\n:::\n",
+    "supporting": [
+      "27noise_files"
+    ],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

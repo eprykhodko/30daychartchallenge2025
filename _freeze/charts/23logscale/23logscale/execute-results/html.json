@@ -1,0 +1,17 @@
+{
+  "hash": "101337d51c13ff155d1007df62781e14",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"Day 23: Log Scale\"\nformat: html\nexecute:\n  eval: true\n  echo: false\n  message: false\n  warning: false\n---\n\n::: {.cell}\n\n:::\n\n::: {.cell}\n::: {.cell-output-display}\n![](23logscale_files/figure-html/unnamed-chunk-2-1.png){width=672}\n:::\n:::\n",
+    "supporting": [
+      "23logscale_files"
+    ],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

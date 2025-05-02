@@ -1,0 +1,30 @@
+---
+title: "Day 24: World Health Organization"
+format: html
+execute:
+  eval: true
+  echo: false
+  message: false
+  warning: false
+---
+
+# Covid is not a thing anymore 
+
+```{r}
+library(tidyverse)
+library(tidyplots)
+```
+
+
+```{r}
+df <- read_csv("WHO-COVID-19-global-data.csv")
+
+countries <- c("Ukraine", "Poland", "Italy", "Czechia", "Hungary") 
+
+df |> filter(Country %in% countries ) |> tidyplot(x=Date_reported, y=Cumulative_deaths, color=Country) |>
+  add_areastack_absolute() |> 
+  adjust_legend_position("top") |> 
+  adjust_size(100, 50) |> 
+  add_title("Cumulative deaths in selected countries") |>
+  add_caption("Data: WHO")
+```

@@ -1,0 +1,17 @@
+{
+  "hash": "f35cacc9aa66306f90f4ac7bb00bf943",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"Day 9: Diverging\"\nformat: html\nexecute:\n  eval: true\n  echo: false\n  message: false\n  warning: false\n---\n\n\n\n## Різниця середніх заробітних план чоловіків і жінок.\n\n\n\n::: {.cell}\n\n:::\n\n::: {.cell}\n\n:::\n\n::: {.cell}\n::: {.cell-output-display}\n![](09diverging_files/figure-html/unnamed-chunk-3-1.png){width=864}\n:::\n:::\n\n\n\nДанні: [Держстат](https://stat.gov.ua/uk/explorer?urn=SSSU%3ADF_ENTERPRISE_LABOR_STATISTICS%2820.0.0%29&filter=RAT_AVG_SALARY_MEN_WOMEN.%2A.%2A.%2A.%2A.%2A \"https://stat.gov.ua/uk/explorer?urn=SSSU%3ADF_ENTERPRISE_LABOR_STATISTICS%2820.0.0%29&filter=RAT_AVG_SALARY_MEN_WOMEN.%2A.%2A.%2A.%2A.%2A\")\n",
+    "supporting": [
+      "09diverging_files"
+    ],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

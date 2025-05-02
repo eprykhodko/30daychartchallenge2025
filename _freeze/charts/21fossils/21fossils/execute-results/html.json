@@ -1,0 +1,17 @@
+{
+  "hash": "85024239ef9caf30b6f6099bc9b3dba8",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"Day 21: Fossils\"\nformat: html\nexecute:\n  eval: true\n  echo: false\n  message: false\n  warning: false\n---\n\n\n\nFossil fuels usage using the mgp dataset\n\n\n\n::: {.cell}\n\n:::\n\n::: {.cell}\n\n:::\n\n::: {.cell}\n::: {.cell-output-display}\n![](21fossils_files/figure-html/unnamed-chunk-3-1.png)\n:::\n:::",
+    "supporting": [
+      "21fossils_files"
+    ],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

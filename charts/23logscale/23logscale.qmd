@@ -1,0 +1,31 @@
+---
+title: "Day 23: Log Scale"
+format: html
+execute:
+  eval: true
+  echo: false
+  message: false
+  warning: false
+---
+
+
+```{r}
+library(tidyverse)
+
+meteorites <- readr::read_csv(
+  "https://raw.githubusercontent.com/rfordatascience/tidytuesday/main/data/2019/2019-06-11/meteorites.csv"
+)
+
+```
+
+
+```{r}
+meteorites |> group_by(year) |>
+  summarise(count = n(), total_mass = sum(mass)) |>
+  ggplot(aes(x = year, y = count)) +
+  geom_col(alpha=0.75) +
+  geom_smooth(se=FALSE, na.rm=TRUE) +
+  labs(title = "Exponential growth in documented metheorites", x = "Year", y = "Meteorite recorded by year (log)") +
+  scale_y_log10() +
+  scale_x_continuous(limits = c(1700, 2025))
+```

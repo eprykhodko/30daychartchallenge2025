@@ -1,0 +1,29 @@
+---
+title: "Day 28: Inclusion"
+format: html
+execute:
+  eval: true
+  echo: false
+  message: false
+  warning: false
+---
+
+# A look at inclusive sertified buildings in Lutsk 
+
+```{r}
+library(leaflet)
+library(tidyverse)
+library(sf)
+
+geo <-  read_sf("inclusive_buildings.json")
+
+
+leaflet(geo) |> 
+  addTiles() |> 
+  setView(lng = 25.34, lat = 50.75, zoom = 14) |> 
+  addGeoJSON(geo$geometry)
+
+```
+Data: https://data.gov.ua/dataset/26002586-ec16-4d48-ad02-944323025aa0
+
+

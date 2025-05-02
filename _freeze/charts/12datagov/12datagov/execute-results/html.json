@@ -1,0 +1,17 @@
+{
+  "hash": "0c8bbc22147e41d82ff7efd3194b35a6",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"Day 12: data.gov\"\nformat: html\nexecute:\n  eval: true\n  echo: false\n  message: false\n  warning: false\n---\n\n\n\n# Exploring relationship between fine particles measured in the air and number of hospitalizations due to fine particles.\n\n\n\n::: {.cell}\n\n:::\n\n::: {.cell}\n\n:::\n\n::: {.cell}\n::: {.cell-output-display}\n![](12datagov_files/figure-html/unnamed-chunk-3-1.png){width=672}\n:::\n:::\n",
+    "supporting": [
+      "12datagov_files"
+    ],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

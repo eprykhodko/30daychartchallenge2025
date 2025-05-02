@@ -1,0 +1,53 @@
+library(tidyverse)
+library(ggrepel)
+
+death_rate <- read_csv("charts/25risk/share-of-women-who-are-expected-to-die-from-pregnancy-related-causes.csv")
+skilled_births <- read_csv("charts/25risk/share-of-births-attended-by-skilled-health-staff.csv")
+
+african_countries <- c(
+  "Algeria", "Angola", "Benin", "Botswana", "Burkina Faso", "Burundi",
+  "Cabo Verde", "Cameroon", "Central African Republic", "Chad",
+  "Comoros", "Congo (Congo-Brazzaville)", "Côte d'Ivoire",
+  "Democratic Republic of the Congo", "Djibouti", "Egypt",
+  "Equatorial Guinea", "Eritrea", "Eswatini",
+  "Ethiopia", "Gabon", "Gambia", "Ghana", "Guinea",
+  "Guinea-Bissau", "Kenya", "Lesotho", "Liberia",
+  "Libya", "Madagascar", "Malawi", "Mali",
+  "Mauritania", "Mauritius", "Mozambique",
+  "Namibia", "Niger", "Nigeria", "Rwanda",
+  "Sao Tome and Principe", "Senegal", "Seychelles",
+  "South Africa", "Somalia", "South Sudan", "Sudan", 
+  "Tanzania", "Togo", "Tunisia",
+  "Uganda", "Zambia", "Zimbabwe",
+  "United Republic of Tanzania"
+)
+
+filled_skilled_births <- skilled_births |> complete(Entity, Year) |> arrange(Entity, desc(Year)) |>  fill(everything())
+
+df <- death_rate |> filter(Entity %in% african_countries & Year == 2020) |> 
+  rename(dr = `Lifetime risk of maternal death (%)` ) |> 
+  left_join(filled_skilled_births |> filter(Entity %in% african_countries & Year == 2020) |> 
+              rename(sk = `Births attended by skilled health staff (% of total)`)) |> 
+  mutate(Entity = fct_reorder(Entity, dr))
+
+
+base_plot <- df |> ggplot(aes(x=sk, y=dr)) +
+  geom_point(aes(color=Entity)) +
+  geom_text_repel(aes(label=Entity), hjust = 0, nudge_x = 0.5) +
+  scale_y_continuous(limits = c(0, 10), breaks = seq(0, 10, by = 1)) +
+  labs(
+    title = "Maternal death risk and skilled birth attendance in Africa",
+    subtitle = "Countries with higher rates of skilled birth attendance have lower maternal death risk",
+    x = "Births attended by skilled health staff (%)",
+    y = "Lifetime risk of maternal death (%)",
+    caption = "Data: Our World in Data"
+  ) +
+  theme_minimal() +
+  theme(legend.position = "none")
+
+
+full_plot <-  base_plot + scale_x_continuous(limits = c(0, 102), breaks = seq(0, 100, by = 10)) 
+zoomed_in <-  base_plot + scale_x_continuous(limits = c(98, 102), breaks = seq(0, 100, by = 10)) 
+
+
+

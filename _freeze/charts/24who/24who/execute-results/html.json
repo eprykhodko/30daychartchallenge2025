@@ -1,0 +1,17 @@
+{
+  "hash": "274a0a168444a4992b5039dd0b889a32",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"Day 24: World Health Organization\"\nformat: html\nexecute:\n  eval: true\n  echo: false\n  message: false\n  warning: false\n---\n\n\n\n# Covid is not a thing anymore \n\n\n\n::: {.cell}\n\n:::\n\n::: {.cell}\n::: {.cell-output-display}\n![](24who_files/figure-html/unnamed-chunk-2-1.png){width=672}\n:::\n:::\n",
+    "supporting": [
+      "24who_files"
+    ],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

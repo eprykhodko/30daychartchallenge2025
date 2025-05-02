@@ -1,0 +1,17 @@
+{
+  "hash": "44275c4d1f55211a81ad7bc30d1abb92",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"Day 30: National Geographic\"\nformat: html\nexecute:\n  eval: true\n  echo: false\n  message: false\n  warning: false\n---\n\n::: {.cell}\n::: {.cell-output-display}\n![](30natgeo_files/figure-html/unnamed-chunk-1-1.png){width=672}\n:::\n:::\n",
+    "supporting": [
+      "30natgeo_files"
+    ],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

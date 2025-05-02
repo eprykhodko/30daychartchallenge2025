@@ -1,0 +1,13 @@
+---
+title: "Day 29: Extraterrestrial"
+format: html
+execute:
+  eval: true
+  echo: false
+  message: false
+  warning: false
+---
+
+For a brief moment in the summer of 2023 Ukraine was more interested in the Katy Perry 2010 single ["E.T."](https://en.wikipedia.org/wiki/E.T._(song)) (feat. Kanye West) than in the classic 1982 Movie "E.T. the Extra-Terrestrial"
+
+![](et.png)

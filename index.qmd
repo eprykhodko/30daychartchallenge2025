@@ -1,0 +1,57 @@
+---
+title: "30daychartchallenge 2025"
+---
+
+# 2024 Charts
+
+Found on [observable](https://observablehq.com/collection/@ericws/30daychartchallenge2024)
+
+# 2025 Charts
+
+## Comparisons
+
+-   01 - [Fractions](charts/01fractions/01fractions.qmd)
+-   02 - [Slope](charts/02slope/02slope.qmd)
+-   02 - [Circular](charts/03circular/03circular.qmd)
+-   04 - [Big or Small](charts/04big-or-small/04big-or-small.qmd)
+-   05 - [Rankings](charts/05rankings/05rankings.qmd)
+-   06 - [Florence Nightingale](charts/06florence-nightingale/06florence-nightingale.qmd)
+
+## Distributions
+
+-   07 - [Outliers](charts/07outliers/07outliers.qmd)
+-   08 - [Histogram](charts/08histogram/08histogram.qmd)
+-   09 - [Diverging](charts/09diverging/09diverging.qmd)
+-   10 - [Multimodal](charts/10multimodal/10multimodal.qmd)
+-   11 - [Striptes](charts/11stripes/11stripes.qmd)
+-   12 - [Data day: data.gov](charts/12datagov/12datagov.qmd)
+
+## Relationships
+
+-   13 - [Clusters](charts/13clusters/13clusters.qmd)
+-   14 - [Kinship](charts/14kinship/14kinship.qmd)
+-   15 - [Complicated](charts/15complicated/15complicated.qmd)
+-   16 - [Negative](charts/16negative/16negative.qmd)
+-   17 - [Birds](charts/17birds/17birds.qmd)
+-   18 - [El Pais](charts/18elpais/18elpais.qmd)
+
+## Timeseries
+
+-   19 - [Smooth](charts/19smooth/19smooth.qmd)
+-   20 - [Urbanisation](charts/20urbanisation/20urbanisation.qmd)
+-   21 - [Fossils](charts/21fossils/21fossils.qmd)
+-   22 - [(Falling) Stars](charts/22stars/22stars.qmd)
+-   23 - [Log Scale](charts/23logscale/23logscale.qmd)
+-   24 - [WHO](charts/24who/24who.qmd)
+
+## Uncertainties
+
+-   25 - [Risk](charts/25risk/25risk.qmd)
+-   26 - [Monochrome](charts/26monochrome/26monochrome.qmd)
+-   27 - [Noise](charts/27noise/27noise.qmd)
+-   28 - [Inclusion](charts/28inclusion/28inclusion.qmd)
+-   29 - [Exraterrestrial](charts/29exraterrestrial/29exraterrestrial.qmd)
+-   30 - [National Geographic](charts/30natgeo/30natgeo.qmd)
+
+
+This is a Quarto website. To learn more about Quarto websites visit <https://quarto.org/docs/websites>.

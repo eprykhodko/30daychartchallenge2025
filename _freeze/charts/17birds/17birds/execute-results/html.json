@@ -1,0 +1,17 @@
+{
+  "hash": "faf33609603f791ef0dfed78bf2b99cc",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"Day 17: Birds\"\nformat: html\nexecute:\n  eval: true\n  echo: false\n  message: false\n  warning: false\n---\n\n::: {.cell}\n\n:::\n\n\n\n# Exploring penguins' mass distribution\n\n\n::: {.cell}\n\n```{.r .cell-code}\nlibrary(palmerpenguins)\n```\n:::\n\n\n\n## Classig ggplot /w faceting \n\n\n::: {.cell}\n\n```{.r .cell-code}\npenguins |> \n  mutate(island = fct_rev(island)) |>\n  ggplot(aes(x=body_mass_g)) +\n  geom_density(aes(color = species, fill=species), alpha=0.25, size=1) +\n  # change order of facets\n  facet_wrap(~island, nrow=3) +\n  scale_color_brewer(palette = \"Set1\") + scale_fill_brewer(palette = \"Set1\") +\n  scale_y_continuous(labels = NULL, breaks = NULL) + ylab(NULL) +\n  theme(\n    legend.position = c(1, 1), \n    legend.justification = c(1, 1), \n    legend.direction = \"horizontal\", \n    legend.title = element_blank(), \n    legend.background = element_rect(fill=\"lightgrey\"))\n```\n\n::: {.cell-output-display}\n![](17birds_files/figure-html/classic-1.png){width=672}\n:::\n:::\n\n\n\n## Using ggridges\n\n\n\n::: {.cell}\n\n```{.r .cell-code}\npenguins |> \n  ggplot(aes(x=body_mass_g, y=island)) +\n  geom_density_ridges(aes(color = species, fill=species), alpha=0.5, size=1) +\n  theme_ridges() +\n  # position legend inside the plot in right upper corner\n  theme(legend.position = c(1, 1), legend.justification = c(1, 1), legend.direction = \"horizontal\", legend.title = element_blank())\n```\n\n::: {.cell-output-display}\n![](17birds_files/figure-html/ridgelines-1.png){width=672}\n:::\n:::\n\n\n\n## Bonus: Using tidyplots\n\n\n::: {.cell}\n\n```{.r .cell-code}\npenguins |> tidyplot(y=island,  x = body_mass_g, fill=species) |> add_violin() |> add_data_points_beeswarm()\n```\n\n::: {.cell-output-display}\n![](17birds_files/figure-html/tidyplot-1.png){width=672}\n:::\n:::\n",
+    "supporting": [
+      "17birds_files"
+    ],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

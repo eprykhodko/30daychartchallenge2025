@@ -1,0 +1,17 @@
+{
+  "hash": "3b76a3030a3e00f202b29747f5046fa3",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"Day 22: (Falling) Stars\"\nformat: html\nexecute:\n  eval: true\n  echo: false\n  message: false\n  warning: false\n---\n\n::: {.cell}\n\n:::\n\n\n\nFirst try\n\n\n\n::: {.cell}\n::: {.cell-output-display}\n![](22stars_files/figure-html/unnamed-chunk-2-1.png)\n:::\n:::\n\n\n\nA stacked bar chart that makes it more obvious what is being displayed exactly. \nEach col is a \"stack\" of meteorites\n\n\n\n::: {.cell}\n::: {.cell-output-display}\n![](22stars_files/figure-html/unnamed-chunk-3-1.png)\n:::\n:::\n\n\n\nA zoomed in view of couple years, really explains the point\n\n\n::: {.cell}\n::: {.cell-output-display}\n![](22stars_files/figure-html/unnamed-chunk-4-1.png)\n:::\n:::\n",
+    "supporting": [
+      "22stars_files"
+    ],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

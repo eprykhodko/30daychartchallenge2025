@@ -1,0 +1,17 @@
+{
+  "hash": "f5411feb570b7d1749fd7670e874cdd7",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"Chart exploring Ukraininan median salaries\"\nformat: html\n---\n\n\n\n\n\n\n\n\n\nPreparing data\n\n\n\n\n::: {.cell}\n\n```{.r .cell-code}\ndf <- df |> mutate(\n  salary=parse_number(data),\n  year=parse_integer(str_sub(period, 1, 4)),\n  month=parse_integer(str_sub(period, 6, 7)),\n  date=ymd(str_glue(\"{year}-{month}-01\"))\n)\n```\n:::\n\n\n\n\n\nLooks like salaries are rising, but keep in mind - these are absolute numbers in UAH. \n\n\n\n\n::: {.cell}\n\n```{.r .cell-code}\ndf |> ggplot(aes(x=date, y=salary)) +\n  geom_line() + \n  geom_smooth(method = \"loess\", formula = y~x) +\n  labs(title=\"Salary by month\", x=\"Date\", y=\"Salary (UAH)\")\n```\n\n::: {.cell-output-display}\n![](practice01_files/figure-html/unnamed-chunk-4-1.png){width=672}\n:::\n:::\n",
+    "supporting": [
+      "practice01_files"
+    ],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}
