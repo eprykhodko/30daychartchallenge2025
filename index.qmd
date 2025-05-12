@@ -60,5 +60,8 @@ Found on [observable](https://observablehq.com/collection/@ericws/30daychartchal
 ## Bonus
 -  [Weather & BWTC](charts/mono/mono.qmd)
 
+# Posts
+- [Practical advice for participants](posts/practical/practical.qmd)
+
 
 This is a Quarto website. To learn more about Quarto websites visit <https://quarto.org/docs/websites>.

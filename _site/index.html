@@ -123,6 +123,7 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#uncertainties" id="toc-uncertainties" class="nav-link" data-scroll-target="#uncertainties">Uncertainties</a></li>
   <li><a href="#bonus" id="toc-bonus" class="nav-link" data-scroll-target="#bonus">Bonus</a></li>
   </ul></li>
+  <li><a href="#posts" id="toc-posts" class="nav-link" data-scroll-target="#posts">Posts</a></li>
   </ul>
 </nav>
     </div>
@@ -218,10 +219,16 @@ ul.task-list li input[type="checkbox"] {
 <ul>
 <li><a href="./charts/mono/mono.html">Weather &amp; BWTC</a></li>
 </ul>
+</section>
+</section>
+<section id="posts" class="level1">
+<h1>Posts</h1>
+<ul>
+<li><a href="./posts/practical/practical.html">Practical advice for participants</a></li>
+</ul>
 <p>This is a Quarto website. To learn more about Quarto websites visit <a href="https://quarto.org/docs/websites" class="uri">https://quarto.org/docs/websites</a>.</p>
 
 
-</section>
 </section>
 
 </main> <!-- /main -->
@@ -317,7 +324,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   }
     var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
     var mailtoRegex = new RegExp(/^mailto:/);
-      var filterRegex = new RegExp('/' + window.location.host + '/');
+      var filterRegex = new RegExp("https:\/\/eprykhodko\.quarto\.pub\/30daychartchallenge-2025");
     var isInternal = (href) => {
         return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
     }
