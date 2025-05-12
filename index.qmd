@@ -2,6 +2,9 @@
 title: "30daychartchallenge 2025"
 ---
 
+# 2023 Charts
+[Gallery](2023/2023.qmd)
+
 # 2024 Charts
 
 Found on [observable](https://observablehq.com/collection/@ericws/30daychartchallenge2024)
@@ -52,6 +55,10 @@ Found on [observable](https://observablehq.com/collection/@ericws/30daychartchal
 -   28 - [Inclusion](charts/28inclusion/28inclusion.qmd)
 -   29 - [Exraterrestrial](charts/29exraterrestrial/29exraterrestrial.qmd)
 -   30 - [National Geographic](charts/30natgeo/30natgeo.qmd)
+
+
+## Bonus
+-  [Weather & BWTC](charts/mono/mono.qmd)
 
 
 This is a Quarto website. To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
