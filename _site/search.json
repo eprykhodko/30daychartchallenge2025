@@ -4,14 +4,14 @@
     "href": "posts/practical/practical.html",
     "title": "Practical advice for paticipating in #30DayChartChallenge",
     "section": "",
-    "text": "Over the last three years (2023-2025) I’ve been participating in the #30DayChartChallenge, which is an event in the data visualization community in which participants are challenged to create 30 charts in 30 days of the month of April based on the prompts provided by the orgss.\nHere’s the example of prompts for 2024.\n\n\n\nbluesky\n\n\nI found it a useful tool to explore my interest in the data visualization as well as a great way to keep a structured approach to learning and doing and holding myself accountable.\nWith three years, four books and 90+ visualizations behind my belt, this is a collection of practical advice for people wanting to participate in the challenge interleaved with my observations about visualizing data in general."
+    "text": "Over the last three years (2023-2025) I’ve been participating in the #30DayChartChallenge. It’s an event in the data visualization community in which participants are challenged to create 30 charts in 30 days of the month of April based on the prompts provided by the orgs.\nHere’s the example of prompts for 2024.\n\nI found the challenge a useful tool to explore my interest in the data visualization as well as a great way to keep a structured approach to learning and doing and holding myself accountable.\nWith three years, four books and 90+ visualizations behind my belt, here is a collection of practical advice for people wanting to participate in the challenge interleaved with my observations about visualizing data in general."
   },
   {
     "objectID": "posts/practical/practical.html#know-what-you-want-to-get-out-of-it",
     "href": "posts/practical/practical.html#know-what-you-want-to-get-out-of-it",
     "title": "Practical advice for paticipating in #30DayChartChallenge",
     "section": "Know what you want to get out of it",
-    "text": "Know what you want to get out of it\nIt’s difficult to make something great every day in the few hours in the evening after your day job while learning new tools. IMO There are two way to approach the challenge.\n\n“I will make something great using tools I already know”\n“I will make something and acquire new skill along the way”\n\nThe latter is my preferred approach, and I’ve been happy using the skills acquired during this challenge in my day job."
+    "text": "Know what you want to get out of it\nIt’s difficult to make something great every day in the few hours in the evening after your day job while learning new tools. IMO There are two way to approach the challenge.\n\n“I will make something great using tools I already know”\n“I will make something and acquire new skill along the way”\n\nThe latter is my preferred approach, and I’ve been happy using the skills acquired during this challenge in my day job. I rarely produced truly great graphs, but each one that helped me learn a new concept, recipe, type of visualization or even a seldom-used argument to an already familiar function, I considered a success."
   },
   {
     "objectID": "posts/practical/practical.html#interpret-prompts-losely",
@@ -25,42 +25,42 @@
     "href": "posts/practical/practical.html#reusing-datasets",
     "title": "Practical advice for paticipating in #30DayChartChallenge",
     "section": "Reusing datasets",
-    "text": "Reusing datasets\nSearching for the right data set to make the graph look just right can be a huge time sink. I recommend finding a couple of data sets that are interesting to you in advance and using them throughout the month.\nExamples of using the same data for different prompts"
+    "text": "Reusing datasets\nSearching for the right data set to make the graph look just right can be a huge time sink. I recommend finding a couple of data sets that are interesting to you in advance and using them throughout the month.\nExamples of using the same data for different prompts (clickable)"
   },
   {
     "objectID": "posts/practical/practical.html#using-personal-datasets",
     "href": "posts/practical/practical.html#using-personal-datasets",
     "title": "Practical advice for paticipating in #30DayChartChallenge",
     "section": "Using personal datasets",
-    "text": "Using personal datasets\nPlotting the data that you source yourself or is about yourself is fun and has an added benefit in that you already have an intuitive feel for the dataset, so it’s easier to plan out your visualizations."
+    "text": "Using personal datasets\nPlotting the data that you gathered yourself or that is about yourself is fun and has an added benefit in that you already have an intuitive feel for the data set, so it’s easier to plan out your visualizations."
   },
   {
     "objectID": "posts/practical/practical.html#data-sources",
     "href": "posts/practical/practical.html#data-sources",
     "title": "Practical advice for paticipating in #30DayChartChallenge",
     "section": "Data sources",
-    "text": "Data sources\ndata.gov.ua and the new stat.gov.ua are great, but have a varying quality of data. Many datasets are in xls or in csv with archaic encodings (CP-1252 anyone?). Some good sources for clean and tidy data sets. - OWID - TidyTuesday - Kaggle - eurostat - NYC OpenData"
+    "text": "Data sources\ndata.gov.ua and the new stat.gov.ua are great, but have a varying quality of data. Many data sets are in xls or csv with archaic encodings (cp1252 anyone?). Some good sources for clean and tidy data sets: - OWID - TidyTuesday - Kaggle - eurostat - NYC OpenData"
   },
   {
     "objectID": "posts/practical/practical.html#verbosity",
     "href": "posts/practical/practical.html#verbosity",
     "title": "Practical advice for paticipating in #30DayChartChallenge",
     "section": "Verbosity",
-    "text": "Verbosity\nIn the moment while dealing with data it might seem redundant or overly verbose to add labels, subtitles, tags, etc. But they contribute to overall quality of your graph and make it easier to understand.\n\n\n\n\n\n\n\n\nMore examples of annotations helping to tell a story"
+    "text": "Verbosity\nWhile dealing with data, it might seem redundant or overly verbose to add labels, subtitles, tags, etc. But they contribute to overall quality of your graph and make it easier to understand. Compare the two examples below:\n\n\n\n\n\n\n\n\nMore examples of annotations helping to tell a story (clickable)"
   },
   {
     "objectID": "posts/practical/practical.html#interactivity",
     "href": "posts/practical/practical.html#interactivity",
     "title": "Practical advice for paticipating in #30DayChartChallenge",
     "section": "Interactivity",
-    "text": "Interactivity\nInteractivity via web-widgets is cool, but doesn’t land itself well to print or easy sharing.  Don’t use it at all; or go all-in and create interactive publications. It’s usually better to just label the data."
+    "text": "Interactivity\nInteractivity via web-widgets feels cool, but in my opinion doesn’t add much value. Such interaction-heavy visualizations also don’t land themselves well to print or easy sharing.  Good visualizations don’t make the reader work for insights by poking around with a mouse, instead they provide appropriate amount of data understandable and easily digestible at a glance. It’s usually better to just label the data.\n\nEither don’t use interactive annotations at all, or go all-in (when subject warrants it) and create interactive publications. Like this one about foundation color names. Note, that even in it, interactivity is used sparingly."
   },
   {
     "objectID": "posts/practical/practical.html#colors-and-pallets",
     "href": "posts/practical/practical.html#colors-and-pallets",
     "title": "Practical advice for paticipating in #30DayChartChallenge",
     "section": "Colors and pallets",
-    "text": "Colors and pallets\nPicking the right color pallet, creating appropriate contrast, choosing fonts, making the graph visually appealing. is difficult Study and use ready made color pallets. Find out about ColorBrewer, paletteer, color finder\nThis will help you avoid things like this\n\n\n\nTrying to replicate the “pixar” color pallete"
+    "text": "Colors and pallets\nPicking the right color pallet, creating appropriate contrast, choosing fonts, making the graph visually appealing is difficult. Study and use ready made color pallets. Find out about ColorBrewer, paletteer and color finder.\nThis will help you avoid things like this\n\n\n\nTrying to replicate the “pixar” color pallete"
   },
   {
     "objectID": "posts/practical/practical.html#maps-are-hard",
@@ -74,7 +74,7 @@
     "href": "posts/practical/practical.html#pie-charts-are-terrible",
     "title": "Practical advice for paticipating in #30DayChartChallenge",
     "section": "Pie charts are terrible",
-    "text": "Pie charts are terrible\nHumans aren’t good at interpreting angles. A stacked bar chart or a table is almost always better than a pie chart. To my surprise most dataviz tools don’t have a proper built-in way of doing pie charts. I reckon it’s because people developing know what’s up.\nThe following chart illustrates almost all pitfalls mentioned above…"
+    "text": "Pie charts are terrible\nHumans aren’t good at interpreting angles. A stacked bar chart or a table is almost always better than a pie chart. To my surprise, most data viz tools don’t have a proper built-in way of doing pie charts. Typical stack overflow answers direct you to use low level graphing APIs to display segments over the manually calculated angles or transposing your graph into polar coordinates. I reckon it’s because people developing those tools know what’s up.\nThe following chart illustrates almost all pitfalls mentioned above…"
   },
   {
     "objectID": "posts/practical/practical.html#oh-and-dont-do-this-i-guess",
